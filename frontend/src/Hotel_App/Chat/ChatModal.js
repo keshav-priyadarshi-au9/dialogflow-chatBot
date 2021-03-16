@@ -56,6 +56,7 @@ const ChatModal = (props) => {
 
     axios
       .post("http://localhost:2400/chatbot", obj)
+      // .post("https://travenation-controller.herokuapp.com/chatbot", obj)
 
       .then((response) => {
         setServerResponse([...serverResponse, response.data]);
